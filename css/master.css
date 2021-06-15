@@ -1,0 +1,47 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+img{
+  max-width: 100%;
+}
+
+ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+a{
+  color: inherit;
+}
+
+section{
+  margin: 0;
+}
+
+header{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: red;
+}
+
+.head-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.nav{
+  position: absolute;
+  background-color: green;
+  left: 10%;
+  width: 80%;
+  text-align: center;
+}
