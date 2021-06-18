@@ -289,15 +289,18 @@ footer>.logo:active{
 
 .fnav-link{
   color: hsl(168, 34%, 34%);
+  transition: all 0.3s linear;
 }
 
 .fnav-link:hover{
   cursor: pointer;
   color: hsl(0, 0%, 100%);
+  transform: scale(1.1);
 }
 
 .fnav-link:active{
   color: hsl(51, 100%, 49%);
+  transform: none;
 }
 
 .social-list{
@@ -306,12 +309,23 @@ footer>.logo:active{
   justify-content: center;
 }
 
+.social-link{
+  transition: all 0.3s linear;
+}
+
 .social-link:hover{
   cursor: pointer;
-  filter: grayscale(100%) invert(100%) saturate(100%) brightness(100%);
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(101deg) brightness(109%) contrast(100%);
+  transform: scale(1.5);
+}
+
+.social-link:active{
+  filter: invert(78%) sepia(65%) saturate(614%) hue-rotate(3deg) brightness(101%) contrast(102%);;
+  transform: none;
 }
 
 /*
+filter: grayscale(100%) invert(100%) saturate(100%) brightness(100%);
 filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(101deg) brightness(109%) contrast(100%);
 */
 
@@ -319,7 +333,14 @@ filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(101deg) brightness(109%
   margin-left: 1.5rem;
 }
 
-
+.attribution {
+  background-color: hsl(168, 40%, 60%);
+  font-size: 14px;
+  text-align: center;
+  color: hsl(212, 27%, 19%);
+  padding-bottom: .5rem;
+}
+.attribution a { color: hsl(0, 0%, 100%); }
 
 /*brightness(50%) hue-rotate(168) saturate(34%)*/
 
@@ -565,6 +586,11 @@ filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(101deg) brightness(109%
     top: 50%;
     width: 60%;
     left: 20%;
+  }
+
+  .client{
+    width: 80%;
+    margin: auto;
   }
 
 }
