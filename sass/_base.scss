@@ -1,0 +1,63 @@
+/* css code of base of index pages to reset css */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+/*
+font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif;
+*/
+
+:root{
+  font-size: 18px;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  font-family: 'Barlow', sans-serif;
+}
+
+img{
+  max-width: 100%;
+}
+
+ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+section{
+  margin: 0;
+}
+
+
+.loader{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background: #3ebfff;
+}
+
+.hidden{
+  animation: fadeout 2s;
+  animation-fill-mode: forwards;
+}
+
+@media (max-width: 750px){
+  body{
+    text-align: center;
+  }
+}

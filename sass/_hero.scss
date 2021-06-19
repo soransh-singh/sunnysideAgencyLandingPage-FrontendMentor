@@ -1,0 +1,35 @@
+/* css code of hero section of all pages */
+.hero{
+  position: relative;
+}
+
+.hero-content{
+  position: absolute;
+  top: calc(20% - 40px);
+  width: 100%;
+  text-align: center;
+}
+
+.hero-content>h1{
+  color: white;
+  font-family: 'Fraunces', serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 2.5rem;
+  letter-spacing: 5px;
+}
+
+.arrow{
+  animation: arrowBlink 1s alternate infinite;
+  transition: all 0.2s linear;
+}
+
+.arrow:hover{
+  animation-play-state: paused;
+  transform: scale(1.2) translateY(0%);
+  filter: invert(27%) sepia(65%) saturate(614%) hue-rotate(3deg) brightness(101%) contrast(102%);
+}
+
+.arrow:active{
+  transform: none;
+}

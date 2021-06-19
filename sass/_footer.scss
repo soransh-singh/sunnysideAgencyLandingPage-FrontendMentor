@@ -1,0 +1,87 @@
+/* css code of footer section of all pages */
+footer{
+  margin-top: -5px;
+  background-color: hsl(168, 40%, 60%);
+  padding: 1rem 0;
+}
+
+footer>.logo{
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem auto;
+  filter: invert(51%) sepia(7%) saturate(2525%) hue-rotate(118deg) brightness(97%) contrast(83%);
+}
+
+footer>.logo:hover{
+  filter: none;
+}
+
+footer>.logo:active{
+  filter: invert(27%) sepia(65%) saturate(614%) hue-rotate(3deg) brightness(101%) contrast(102%);
+}
+
+.fnav-list{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.fnav-link{
+  color: hsl(168, 34%, 34%);
+  transition: all 0.3s linear;
+}
+
+.fnav-link:hover{
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+  transform: scale(1.1);
+}
+
+.fnav-link:active{
+  color: hsl(51, 100%, 49%);
+  transform: none;
+}
+
+.social-list{
+  display: flex;
+  margin: 2rem 0;
+  justify-content: center;
+}
+
+.social-link{
+  filter: invert(51%) sepia(7%) saturate(2525%) hue-rotate(118deg) brightness(97%) contrast(83%);
+  transition: all 0.3s linear;
+}
+
+.social-link:hover{
+  cursor: pointer;
+  filter: none;
+  transform: scale(1.5);
+}
+
+.social-link:active{
+  filter: invert(27%) sepia(65%) saturate(614%) hue-rotate(3deg) brightness(101%) contrast(102%);
+  transform: none;
+}
+
+.social-link + .social-link{
+  margin-left: 1.5rem;
+}
+
+.attribution {
+  background-color: hsl(168, 40%, 60%);
+  font-size: 14px;
+  text-align: center;
+  color: hsl(212, 27%, 19%);
+  padding-bottom: .5rem;
+}
+.attribution a { color: hsl(0, 0%, 100%); }
+
+@media (min-width: 750px) {
+
+    .fnav-list{
+      max-width: 600px;
+    }
+}
