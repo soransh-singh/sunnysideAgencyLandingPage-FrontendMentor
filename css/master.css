@@ -63,6 +63,7 @@ header{
 .logo:hover{
   filter: none;
   cursor: pointer;
+  transform: scale(1.2);
 }
 
 .logo:active{
@@ -277,9 +278,6 @@ footer>.logo:active{
   filter: invert(27%) sepia(65%) saturate(614%) hue-rotate(3deg) brightness(101%) contrast(102%);
 }
 
-
-
-
 .fnav-list{
   display: flex;
   width: 80%;
@@ -310,17 +308,18 @@ footer>.logo:active{
 }
 
 .social-link{
+  filter: invert(51%) sepia(7%) saturate(2525%) hue-rotate(118deg) brightness(97%) contrast(83%);
   transition: all 0.3s linear;
 }
 
 .social-link:hover{
   cursor: pointer;
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(101deg) brightness(109%) contrast(100%);
+  filter: none;
   transform: scale(1.5);
 }
 
 .social-link:active{
-  filter: invert(78%) sepia(65%) saturate(614%) hue-rotate(3deg) brightness(101%) contrast(102%);;
+  filter: invert(27%) sepia(65%) saturate(614%) hue-rotate(3deg) brightness(101%) contrast(102%);
   transform: none;
 }
 
