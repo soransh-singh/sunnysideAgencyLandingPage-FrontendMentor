@@ -39,6 +39,21 @@ section{
   margin: 0;
 }
 
+.loader{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background: #3ebfff;
+}
+
+.hidden{
+  animation: fadeout 2s;
+  animation-fill-mode: forwards;
+}
+
 header{
   position: absolute;
   z-index: 2;
@@ -99,6 +114,21 @@ header{
   font-weight: 800;
   font-size: 2.5rem;
   letter-spacing: 5px;
+}
+
+.arrow{
+  animation: arrowBlink 1s alternate infinite;
+  transition: all 0.2s linear;
+}
+
+.arrow:hover{
+  animation-play-state: paused;
+  transform: scale(1.2) translateY(0%);
+  filter: invert(27%) sepia(65%) saturate(614%) hue-rotate(3deg) brightness(101%) contrast(102%);
+}
+
+.arrow:active{
+  transform: none;
 }
 
 .transform{
@@ -342,6 +372,8 @@ filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(101deg) brightness(109%
 .attribution a { color: hsl(0, 0%, 100%); }
 
 /*brightness(50%) hue-rotate(168) saturate(34%)*/
+
+
 
 @media (max-width: 750px){
   body{
@@ -592,4 +624,23 @@ filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(101deg) brightness(109%
     margin: auto;
   }
 
+}
+
+
+@keyframes arrowBlink {
+  0% {
+    transform: scale(1) translateY(-20%);
+
+  }
+  100% {
+    transform: scale(1.2) translateY(0%);
+  }
+}
+
+
+@keyframes fadeout {
+    100%{
+      visibility: hidden;
+      opacity: 0;
+    }
 }

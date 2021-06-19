@@ -1,21 +1,16 @@
 window.addEventListener("load", ()=>{
 
-  const loader = document.querySelector(".loader")
-
   const nav = document.querySelector(".nav");
   const navBtn = document.querySelector(".nav-btn");
 
   navBtn.addEventListener("click", ()=>{
     nav.classList.toggle("nav-open")
     if(nav.classList.contains("nav-open")){
-      navBtn.src = "./images/icon-close.svg"
+      navBtn.src = "./../images/icon-close.svg"
     }else{
-      navBtn.src = "./images/icon-menu.svg"
+      navBtn.src = "./../images/icon-menu.svg"
 
     }
   })
-
-  /*added loader*/
-
-  loader.classList.add("hidden")
+  
 })
