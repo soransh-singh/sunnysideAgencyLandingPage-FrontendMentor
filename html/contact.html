@@ -45,8 +45,16 @@
         <p></p>
 
       </div>
-      <form class="form">
-
+      <form class="form" novalidate>
+        <input type="text" name="name" class="name" placeholder="Name">
+        <p class="name__error error"></p>
+        <input type="email" name="email" class="email" placeholder="Email Address">
+        <p class="email__error error"></p>
+        <input type="text" name="title" class="title" placeholder="title">
+        <p class="title__error error"></p>
+        <textarea name="text" rows="4" cols="20">Enter a Message...</textarea>
+        <p class="text__error error"></p>
+        <input type="submit" name="" value="Claim your free trial" class="btn">
       </form>
     </section>
   </main>
