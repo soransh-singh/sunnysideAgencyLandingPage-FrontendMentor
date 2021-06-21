@@ -40,21 +40,25 @@
   </section>
   <main>
     <section class="contact-form" id="contact">
-      <div class="">
+      <div class="contact-content">
         <h1>Contact Us</h1>
-        <p></p>
+        <ul class="contact-list">
+          <li class="contact-link"> <img src="./../images/icon-phone.svg" alt="phone"> <p>+01 236 2552</p> </li>
+          <li class="contact-link"> <img src="./../images/icon-email.svg" alt="Email"> <p>help@Sunnyside.com</p> </li>
+        </ul>
 
       </div>
-      <form class="form" novalidate>
-        <input type="text" name="name" class="name" placeholder="Name">
+      <form class="form">
+        <input type="text" name="name" placeholder="Name" required>
         <p class="name__error error"></p>
-        <input type="email" name="email" class="email" placeholder="Email Address">
+        <input type="email" name="email"placeholder="Email Address" required>
         <p class="email__error error"></p>
-        <input type="text" name="title" class="title" placeholder="title">
+        <input type="text" name="title"placeholder="Title" required>
         <p class="title__error error"></p>
-        <textarea name="text" rows="4" cols="20">Enter a Message...</textarea>
+        <label for="text-area">Message</label><br>
+        <input type="text" name="text-area" class="text-area" required>
         <p class="text__error error"></p>
-        <input type="submit" name="" value="Claim your free trial" class="btn">
+        <input type="submit" name="submit" value="Submit" class="contact-btn">
       </form>
     </section>
   </main>
